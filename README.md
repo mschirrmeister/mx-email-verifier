@@ -50,8 +50,8 @@ The code comes from <https://gist.github.com/arulrajnet/c613bd0fad5de00bab2e> pl
 Run the docker container and provide the email address as an option
 
     # providing no option uses the default from the CMD option in the Dockerfile
-    docker run -it --rm --name emailcheck mxemailverifier:latest
+    docker run -it --rm --name emailcheck mschirrmeister/mx-email-verifier:latest
 
     # provide the email via "-e <email.you.want.to.check@example.com>
-    docker run -it --rm --name emailcheck mxemailverifier:latest -e foobar@gmail.com
+    docker run -it --rm --name emailcheck mschirrmeister/mx-email-verifier:latest -e foobar@gmail.com
 
